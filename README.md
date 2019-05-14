@@ -4,8 +4,8 @@ UISplitViewController の masterViewController として UITabBarController を�
 
 ## UI
 
-### 非 Split 表示
+![split](./images/splitted.png)
 
+![no_split_1](./images/notsplitted_1.png)
 
-
-### Split 表示
+![no_split_2](./images/notsplitted_2.png)
