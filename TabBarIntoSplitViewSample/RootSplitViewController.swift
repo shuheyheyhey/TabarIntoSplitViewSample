@@ -12,12 +12,8 @@ import UIKit
 final class RootSplitViewController: UISplitViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setCompornent()
-        self.delegate = self
-    }
-    
-    private func setCompornent() {
         self.preferredDisplayMode = .allVisible
+        self.delegate = self
     }
 }
 

@@ -1,18 +1,18 @@
 //
-//  SecondListViewController.swift
+//  ContentListViewController.swift
 //  TabBarIntoSplitViewSample
 //
-//  Created by Shuhei Yukawa on 2019/05/14.
+//  Created by Shuhei Yukawa on 2019/05/13.
 //  Copyright © 2019 Shuhei Yukawa. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-final class SecondListViewController: UITableViewController {
-    private let viewModel: SecondViewModel
+final class ContentListViewController<T: ViewObject>: UITableViewController {
+    private let viewModel: AnyListViewModel<T>
     
-    init(viewModel: SecondViewModel) {
+    init(viewModel: AnyListViewModel<T>) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
         self.tableView.delegate = self
@@ -26,18 +26,22 @@ final class SecondListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-        self.tabBarItem.title = "Second"
     }
-}
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        // viewDidLoad の時点では TabBar が取れない
+        // Tab に入っていることが前提になってしまっている・・・
+        self.tabBarController?.navigationItem.title = self.viewModel.navigationBarTitle
+    }
 
-extension SecondListViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.viewModel.viewObjects.count
+        return self.viewModel.viewObjects().count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "Cell")
-        cell.textLabel!.text = self.viewModel.viewObjects[indexPath.item].title
+        cell.textLabel!.text = self.viewModel.viewObjects()[indexPath.item].title
         return cell
     }
     
@@ -45,7 +49,7 @@ extension SecondListViewController {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return
         }
-        let viewObject = self.viewModel.viewObjects[indexPath.item]
+        let viewObject = self.viewModel.viewObjects()[indexPath.item]
         let title = viewObject.title
         let color = viewObject.backgroundColor
         let contentViewController = ContentViewController(title: title, backgroundColor: color)

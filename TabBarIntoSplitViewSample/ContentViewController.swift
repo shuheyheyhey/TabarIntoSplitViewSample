@@ -56,7 +56,7 @@ final class ContentViewController: UIViewController {
     }
     
     @objc private func buttonTapped() {
-        let nestedViewController = NestedViewController(titleValue: self.titleValue)
+        let nestedViewController = UIViewController()
         self.navigationController?.pushViewController(nestedViewController, animated: true)
     }
 }

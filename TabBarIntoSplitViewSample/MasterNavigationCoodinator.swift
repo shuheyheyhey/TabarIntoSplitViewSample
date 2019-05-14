@@ -16,7 +16,7 @@ final class MasterNavigationCoodinator {
     var rootViewController: UINavigationController {
         return self.navigationController
     }
-    
+
     func start() {
         self.navigationController.pushViewController(applicationTabbarController, animated: false)
     }

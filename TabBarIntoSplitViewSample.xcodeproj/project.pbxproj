@@ -16,12 +16,9 @@
 		281FECE2228969B400041C33 /* ApplicationCoodinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281FECE1228969B400041C33 /* ApplicationCoodinator.swift */; };
 		281FECE42289704200041C33 /* MasterNavigationCoodinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281FECE32289704200041C33 /* MasterNavigationCoodinator.swift */; };
 		281FECE62289705D00041C33 /* DetailNavigationCoodinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281FECE52289705D00041C33 /* DetailNavigationCoodinator.swift */; };
-		281FECE82289724300041C33 /* FirstListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281FECE72289724300041C33 /* FirstListViewController.swift */; };
+		281FECE82289724300041C33 /* ContentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281FECE72289724300041C33 /* ContentListViewController.swift */; };
 		281FECEA2289725200041C33 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281FECE92289725200041C33 /* ContentViewController.swift */; };
-		281FECEC228A4A4300041C33 /* FirstViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281FECEB228A4A4300041C33 /* FirstViewModel.swift */; };
-		281FECEE228A4A5700041C33 /* SecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281FECED228A4A5700041C33 /* SecondViewModel.swift */; };
-		281FECF0228A85FF00041C33 /* SecondListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281FECEF228A85FF00041C33 /* SecondListViewController.swift */; };
-		281FECF2228A8A0900041C33 /* NestedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281FECF1228A8A0900041C33 /* NestedViewController.swift */; };
+		281FECEC228A4A4300041C33 /* ContentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281FECEB228A4A4300041C33 /* ContentListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,12 +45,9 @@
 		281FECE1228969B400041C33 /* ApplicationCoodinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoodinator.swift; sourceTree = "<group>"; };
 		281FECE32289704200041C33 /* MasterNavigationCoodinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterNavigationCoodinator.swift; sourceTree = "<group>"; };
 		281FECE52289705D00041C33 /* DetailNavigationCoodinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNavigationCoodinator.swift; sourceTree = "<group>"; };
-		281FECE72289724300041C33 /* FirstListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstListViewController.swift; sourceTree = "<group>"; };
+		281FECE72289724300041C33 /* ContentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentListViewController.swift; sourceTree = "<group>"; };
 		281FECE92289725200041C33 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
-		281FECEB228A4A4300041C33 /* FirstViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewModel.swift; sourceTree = "<group>"; };
-		281FECED228A4A5700041C33 /* SecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewModel.swift; sourceTree = "<group>"; };
-		281FECEF228A85FF00041C33 /* SecondListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondListViewController.swift; sourceTree = "<group>"; };
-		281FECF1228A8A0900041C33 /* NestedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedViewController.swift; sourceTree = "<group>"; };
+		281FECEB228A4A4300041C33 /* ContentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +95,9 @@
 				281FECE32289704200041C33 /* MasterNavigationCoodinator.swift */,
 				281FECE52289705D00041C33 /* DetailNavigationCoodinator.swift */,
 				281FECE1228969B400041C33 /* ApplicationCoodinator.swift */,
-				281FECE72289724300041C33 /* FirstListViewController.swift */,
-				281FECEF228A85FF00041C33 /* SecondListViewController.swift */,
+				281FECE72289724300041C33 /* ContentListViewController.swift */,
+				281FECEB228A4A4300041C33 /* ContentListViewModel.swift */,
 				281FECE92289725200041C33 /* ContentViewController.swift */,
-				281FECF1228A8A0900041C33 /* NestedViewController.swift */,
-				281FECEB228A4A4300041C33 /* FirstViewModel.swift */,
-				281FECED228A4A5700041C33 /* SecondViewModel.swift */,
 				281FECBC2289689600041C33 /* Assets.xcassets */,
 				281FECBE2289689600041C33 /* LaunchScreen.storyboard */,
 				281FECC12289689600041C33 /* Info.plist */,
@@ -223,18 +214,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				281FECEC228A4A4300041C33 /* FirstViewModel.swift in Sources */,
+				281FECEC228A4A4300041C33 /* ContentListViewModel.swift in Sources */,
 				281FECD6228968D100041C33 /* ApplicationTabBarController.swift in Sources */,
-				281FECE82289724300041C33 /* FirstListViewController.swift in Sources */,
+				281FECE82289724300041C33 /* ContentListViewController.swift in Sources */,
 				281FECB62289689300041C33 /* AppDelegate.swift in Sources */,
 				281FECEA2289725200041C33 /* ContentViewController.swift in Sources */,
 				281FECD8228968E100041C33 /* RootSplitViewController.swift in Sources */,
-				281FECEE228A4A5700041C33 /* SecondViewModel.swift in Sources */,
-				281FECF2228A8A0900041C33 /* NestedViewController.swift in Sources */,
 				281FECE42289704200041C33 /* MasterNavigationCoodinator.swift in Sources */,
 				281FECE2228969B400041C33 /* ApplicationCoodinator.swift in Sources */,
 				281FECE62289705D00041C33 /* DetailNavigationCoodinator.swift in Sources */,
-				281FECF0228A85FF00041C33 /* SecondListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

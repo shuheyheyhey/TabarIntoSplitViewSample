@@ -13,8 +13,8 @@ final class ApplicationCoodinator {
     private let window: UIWindow
     private let rootSplitViewController: RootSplitViewController
     
-    public let masterNavigationCoodinator = MasterNavigationCoodinator()
-    public let detailNavigationCoodinator = DetailNavigationCoodinator()
+    private let masterNavigationCoodinator = MasterNavigationCoodinator()
+    private let detailNavigationCoodinator = DetailNavigationCoodinator()
     
     init(window: UIWindow) {
         self.window = window

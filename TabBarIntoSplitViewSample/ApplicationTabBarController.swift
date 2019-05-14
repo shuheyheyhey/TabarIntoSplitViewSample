@@ -15,11 +15,19 @@ final class ApplicationTabBarController: UITabBarController {
         self.setCompornent()
     }
     
+    func createViewModel<X: ContentListViewModel, T: ViewObject>(_ x: X) -> AnyListViewModel<T>? where T == X.ViewObject {
+        return x.asExistContentListViewModel()
+    }
+    
     func setCompornent() {
-        self.navigationItem.title = "Menu"
+        let firstViewModel =  self.createViewModel(FirstListViewModel())
+        let firstListViewController = ContentListViewController(viewModel: firstViewModel!)
+        firstListViewController.tabBarItem.title = firstViewModel?.tabBarTitle
         
-        let firstListViewController = FirstListViewController(viewModel: FirstViewModel())
-        let secondListViewController = SecondListViewController(viewModel: SecondViewModel())
+        let secondViewModel = self.createViewModel(SecondListViewModel())
+        let secondListViewController = ContentListViewController(viewModel: secondViewModel!)
+        secondListViewController.tabBarItem.title = secondViewModel?.tabBarTitle
+        
         self.viewControllers = [firstListViewController, secondListViewController]
     }
 }

@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TabBarIntoSplitViewSample/ContentViewController.swift"
-            timestampString = "579507620.0605201"
+            timestampString = "579517558.708173"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "63"
@@ -40,7 +40,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TabBarIntoSplitViewSample/ApplicationCoodinator.swift"
-            timestampString = "579507620.060711"
+            timestampString = "579517558.708765"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "32"
@@ -72,12 +72,26 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TabBarIntoSplitViewSample/RootSplitViewController.swift"
-            timestampString = "579507620.0608521"
+            timestampString = "579517558.708894"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "splitViewController(_:collapseSecondary:onto:)"
+            startingLineNumber = "22"
+            endingLineNumber = "22">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TabBarIntoSplitViewSample/ContentListViewController.swift"
+            timestampString = "579517558.708974"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "viewDidAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
